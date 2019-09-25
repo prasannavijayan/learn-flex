@@ -24,6 +24,9 @@ module.exports = function(environment) {
     }
   };
 
+  // MAP TOKEN
+  ENV.MAPBOX_ACCESS_TOKEN = "pk.eyJ1IjoicHJhc2FubmF2aWpheWFuNTIwIiwiYSI6ImNrMHlwb3VwazAxeWgzY2xnenc3Zm9raDAifQ.p3vD4PpKwlfC1Fl6NPez_Q";
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
