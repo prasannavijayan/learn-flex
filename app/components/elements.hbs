@@ -1,0 +1,35 @@
+<div class="flex flex--vertical elements">
+    <div class="flex header">Elements</div>
+    <div class="flex main">
+
+        <!-- Code Begins -->
+        <div class="flex flex--vertical grow shrink code">
+            <div class="flex grow shink">
+                <Elements::Child @text='ABC' @childValue=1/>
+                <Elements::Child @text='DEF' @childValue=2/>
+                <Elements::Child @text='GHI' @childValue=3/>
+            </div>
+            
+            <div class="flex grow shink">
+                <Elements::Child @text='JKLM' @childValue=9/>
+            </div>
+
+            <div class="flex grow shrink">
+                <!-- Column 1 -->
+                <Elements::Child @text='N' @childValue=4/>
+                
+                <!-- Column 2 -->
+                <div class="flex flex--vertical grow shrink box no-border">
+                    <div class="flex grow shrink">
+                        <Elements::Child @text='OPQ' @childValue=5/>
+                        <Elements::Child @text='RST' @childValue=6/>
+                    </div>
+                    <div class="flex grow shrink">
+                        <Elements::Child @text='UVW' @childValue=7/>
+                        <Elements::Child @text='XYZ' @childValue=8/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

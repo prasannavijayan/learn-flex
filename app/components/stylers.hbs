@@ -1,0 +1,21 @@
+<div class="flex flex--vertical stylers">
+    <div class="flex header">Stylers</div>
+    <div class="main">
+        <div class="flex flex--vertical grow shrink">
+            {{#if selected}}
+                <div class="title">
+                    Selected Element: <b>{{selected}}</b>
+                </div>
+                <hr>
+            {{/if}}
+            {{#each this.common.selected as | var |}}
+                {{#unless var.noshow}}
+                    <div class="flex">
+                        <Input @type='checkbox' @checked={{var.enabled}} @change={{action this.updateVariable var}} />
+                        {{var.title}}: {{var.value}}
+                    </div>
+                {{/unless}}
+            {{/each}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+.elements {
+    flex-grow: 3;
+    @extend .shrink;
+    height: 100vh;
+    border: 1px solid black;
+    border-left: none;
+}
