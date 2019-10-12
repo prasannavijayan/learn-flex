@@ -14,9 +14,19 @@ export default class StylersComponent extends Component {
         }
     }
 
+    triggerUpdate() {
+        set(this.common.selected[0], 'updated', this.common.selected[0].updated + 1);
+    }
+
     @action 
     updateVariable(item) {
         set(item, 'enabled', !item.enabled);
-        set(this.common.selected[0], 'updated', this.common.selected[0].updated + 1);
+        this.triggerUpdate();
+    }
+
+    @action
+    updateSelectedJC(item) {
+        set( this.common.selected[7], 'value', item);
+        this.triggerUpdate();
     }
 }

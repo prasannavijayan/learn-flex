@@ -41,6 +41,7 @@
     "ember-resolver": "^5.1.3",
     "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/beta/shas/e48426b4cd5cba5a7c7ee053969e7bbb6f95ae26.tgz",
     "ember-template-lint": "^1.5.0",
+    "ember-truth-helpers": "^2.1.0",
     "eslint": "^6.1.0",
     "eslint-plugin-ember": "^7.1.0",
     "eslint-plugin-node": "^10.0.0",

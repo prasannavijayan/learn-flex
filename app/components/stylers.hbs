@@ -12,7 +12,18 @@
                 {{#unless var.noshow}}
                     <div class="flex">
                         <Input @type='checkbox' @checked={{var.enabled}} @change={{action this.updateVariable var}} />
-                        {{var.title}}: {{var.value}}
+                        {{#if (eq var.type 'single')}}
+                            <div class="flex">{{var.title}}: {{var.value}}</div>
+                        {{/if}}
+                        {{#if (eq var.type 'multiple')}}
+                            {{var.title}}:
+                            <select onchange={{action "updateSelectedJC" value="target.value"}}>
+                                <option value=''>Select</option>
+                                {{#each var.values as | value |}}
+                                    <option value={{value}}>{{value}}</option>
+                                {{/each}}
+                            </select>
+                        {{/if}}
                     </div>
                 {{/unless}}
             {{/each}}

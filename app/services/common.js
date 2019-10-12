@@ -1,49 +1,6 @@
 import Service from '@ember/service';
 import { tracked } from '@glimmer/tracking';
-
-const Flex_Variables = [
-    {
-        enabled: false,
-        title: "height",
-        value: '200px'
-    }, {
-        enabled: false,
-        title: "padding",
-        value: '20px'
-    }, {
-        enabled: true,
-        title: "border",
-        value: '1px solid black'
-    }, {
-        enabled: false,
-        title: "display",
-        value: 'flex'
-    }, {
-        enabled: false,
-        title: "flex-grow",
-        value: 1
-    }, {
-        enabled: false,
-        title: "flex-shrink",
-        value: 1
-    }, {
-        enabled: false,
-        title: "justify-content",
-        value: 'center'
-    }, {
-        enabled: false,
-        title: "justify-content",
-        value: 'space-around'
-    }, {
-        enabled: false,
-        title: "justify-content",
-        value: 'space-between'
-    }, {
-        enabled: false,
-        title: "align-items",
-        value: 'center'
-    }
-]
+import flexVariables from '../utils/constant';
 
 export default class CommonService extends Service {
     showTemplate       = true;
@@ -65,7 +22,7 @@ export default class CommonService extends Service {
     }
 
     _jsonifyObject() {
-        return JSON.parse( JSON.stringify( Flex_Variables ) );
+        return JSON.parse( JSON.stringify( flexVariables ) );
     }
 
     _objectAvailable( id, text ) {
