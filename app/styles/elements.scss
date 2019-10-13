@@ -4,11 +4,4 @@
     height: 100vh;
     border: 1px solid black;
     border-left: none;
-
-    .layout {
-        &_150 {
-            height: 150px;
-            justify-content: space-between; 
-        }
-    }
 }

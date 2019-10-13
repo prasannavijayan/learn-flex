@@ -36,6 +36,10 @@ a {
 
 .flex {
   display: flex;
+
+  &-inline {
+    display: inline-flex;
+  }
 }
 
 .flex--vertical {
@@ -52,6 +56,9 @@ a {
   overflow: hidden;
 }
 
+.plus {
+  font-size: 20px;
+}
 
 @import "./stylers";
 @import "./elements";

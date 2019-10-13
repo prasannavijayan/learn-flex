@@ -1,22 +1,21 @@
 <div class="flex flex--vertical elements">
     <div class="flex header">Elements</div>
     <div class="flex grow shrink main">
-
         
-        <div class="flex flex--vertical grow shrink code layout_150">
+        <div class="flex flex--vertical grow shrink code">
             
             <!-- Code Alter Begins Here -->
-            <div class="flex">
+            <Elements::Parent @text='Parent Element 101' @parentValue=101>
                 <Elements::Child @text='ABC' @childValue=1/>
                 <Elements::Child @text='DEF' @childValue=2/>
                 <Elements::Child @text='GHI' @childValue=3/>
-            </div>
+            </Elements::Parent>
             
-            <div class="flex">
+            <Elements::Parent @text='Parent Element 102' @parentValue=102>
                 <Elements::Child @text='JKLM' @childValue=9/>
-            </div>
+            </Elements::Parent>
 
-            <div class="flex">
+            <Elements::Parent @text='Parent Element 103' @parentValue=103>
                 <!-- Column 1 -->
                 <Elements::Child @text='N' @childValue=4/>
                 
@@ -31,7 +30,7 @@
                         <Elements::Child @text='XYZ' @childValue=8/>
                     </div>
                 </div>
-            </div>
+            </Elements::Parent>
             <!-- Code Alter Begins Here -->
 
         </div>

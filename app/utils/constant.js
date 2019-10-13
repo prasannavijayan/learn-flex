@@ -25,6 +25,13 @@ const flexVariables = [
         disabled: false
     }, {
         enabled: false,
+        title: "flex-direction",
+        value: '',
+        values: ['row', 'column'],
+        type: 'multiple',
+        disabled: false
+    }, {
+        enabled: false,
         title: "flex-grow",
         value: 1,
         type: 'single',
@@ -41,7 +48,7 @@ const flexVariables = [
         value: '',
         values: ['wrap', 'no-wrap', 'wrap-reverse'],
         type: 'multiple',
-        disabled: true
+        disabled: false
     }, {
         enabled: false,
         title: "justify-content",
