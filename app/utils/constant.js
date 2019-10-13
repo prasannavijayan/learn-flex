@@ -1,6 +1,13 @@
 const flexVariables = [
     {
         enabled: false,
+        title: "width",
+        value: '200px',
+        type: 'single',
+        disabled: false
+    },
+    {
+        enabled: false,
         title: "height",
         value: '200px',
         type: 'single',
