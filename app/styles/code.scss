@@ -2,7 +2,7 @@
     // justify-content: spa;
 
     .box {
-        cursor: pointer;
+        @extend .point;
     }
 
     .padd {

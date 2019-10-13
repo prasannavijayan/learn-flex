@@ -56,8 +56,13 @@ a {
   overflow: hidden;
 }
 
+.point {
+  cursor: pointer;
+}
+
 .plus {
   font-size: 20px;
+  @extend .point;
 }
 
 @import "./stylers";

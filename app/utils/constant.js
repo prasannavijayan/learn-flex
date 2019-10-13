@@ -18,7 +18,7 @@ const flexVariables = [
         type: 'single',
         disabled: false
     }, {
-        enabled: false,
+        enabled: true,
         title: "display",
         value: 'flex',
         type: 'single',
@@ -27,7 +27,7 @@ const flexVariables = [
         enabled: false,
         title: "flex-direction",
         value: '',
-        values: ['row', 'column'],
+        values: ['row', 'column', 'row-reverse', 'column-reverse'],
         type: 'multiple',
         disabled: false
     }, {
@@ -40,8 +40,16 @@ const flexVariables = [
     }, {
         enabled: false,
         title: "flex-shrink",
-        value: 1,
-        type: 'single',
+        value: '',
+        values: ['1', '2', '3', '4'],
+        type: 'multiple',
+        disabled: false
+    }, {
+        enabled: false,
+        title: "flex-basis",
+        value: '',
+        values: ['100px', '2em', '3em', '4em'],
+        type: 'multiple',
         disabled: false
     }, {
         enabled: false,
