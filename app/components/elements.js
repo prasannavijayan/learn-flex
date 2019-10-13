@@ -12,8 +12,8 @@ export default class ElementsComponent extends Component {
         this.styles_1 = Ember.String.htmlSafe(`${styles.title}: ${styles.value}`);
     }
 
-    @action
-    select( item, id ) {
-        this.common.createVariables( item, id );
-    }
+    // @action
+    // select( item, id ) {
+    //     this.common.createVariables( item, id );
+    // }
 }

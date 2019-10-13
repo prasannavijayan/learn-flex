@@ -18,6 +18,11 @@ export default class StylersComponent extends Component {
         set(this.common.selected[0], 'updated', this.common.selected[0].updated + 1);
     }
 
+    getRecord( item ) {
+        let splitted = item.split('___');
+        return { record: this.common.getSelectedObjectWithTitle( splitted[1] ), value: splitted[0] };
+    }
+
     @action 
     updateVariable(item) {
         set(item, 'enabled', !item.enabled);
@@ -25,8 +30,11 @@ export default class StylersComponent extends Component {
     }
 
     @action
-    updateSelectedJC(item) {
-        set( this.common.selected[7], 'value', item);
+    selectMultiple(item) {
+        
+        let data = this.getRecord( item );
+
+        set( data.record , 'value', data.value );
         this.triggerUpdate();
     }
 }

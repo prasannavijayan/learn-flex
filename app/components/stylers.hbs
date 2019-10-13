@@ -10,17 +10,17 @@
             {{/if}}
             {{#each this.common.selected as | var |}}
                 {{#unless var.noshow}}
-                    <div class="flex">
-                        <Input @type='checkbox' @checked={{var.enabled}} @change={{action this.updateVariable var}} />
+                    <div class="flex {{if var.disabled 'disabled'}}">
+                        <Input @type='checkbox' @checked={{var.enabled}} @change={{action this.updateVariable var}} disabled={{var.disabled}} />
                         {{#if (eq var.type 'single')}}
                             <div class="flex">{{var.title}}: {{var.value}}</div>
                         {{/if}}
                         {{#if (eq var.type 'multiple')}}
                             {{var.title}}:
-                            <select onchange={{action "updateSelectedJC" value="target.value"}}>
+                            <select onchange={{action "selectMultiple" value="target.value"}} disabled={{var.disabled}}>
                                 <option value=''>Select</option>
                                 {{#each var.values as | value |}}
-                                    <option value={{value}}>{{value}}</option>
+                                    <option value="{{value}}___{{var.title}}">{{value}}</option>
                                 {{/each}}
                             </select>
                         {{/if}}
