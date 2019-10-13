@@ -9,7 +9,7 @@ export default class CommonService extends Service {
 
     constructor() {
         super(...arguments);
-        this.createVariables('child', 1, 'ABC');
+        this.createVariables('parent', '101', 'Parent Element 101');
     }
 
     createVariables(item, id, text) {
@@ -30,7 +30,6 @@ export default class CommonService extends Service {
     }
 
     _objectAvailable( id, text ) {
-        id = parseInt( id, 10 );
         let object = this.children.find( i => i[0].id === id );
         if ( object ) {
             return object;

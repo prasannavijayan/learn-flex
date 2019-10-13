@@ -20,7 +20,7 @@
                             <select onchange={{action "selectMultiple" value="target.value"}} disabled={{var.disabled}}>
                                 <option value=''>Select</option>
                                 {{#each var.values as | value |}}
-                                    <option value="{{value}}___{{var.title}}">{{value}}</option>
+                                    <option selected={{eq value var.value}} value="{{value}}___{{var.title}}">{{value}}</option>
                                 {{/each}}
                             </select>
                         {{/if}}

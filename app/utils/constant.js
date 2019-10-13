@@ -33,8 +33,9 @@ const flexVariables = [
     }, {
         enabled: false,
         title: "flex-grow",
-        value: 1,
-        type: 'single',
+        value: '',
+        values: ['1', '2', '3', '4'],
+        type: 'multiple',
         disabled: false
     }, {
         enabled: false,
